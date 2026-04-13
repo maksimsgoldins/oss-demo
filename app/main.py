@@ -7,10 +7,7 @@ app = FastAPI(title=settings.app_name)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://oss-frontend-brep.onrender.com",
-    ],
+    allow_origins=["http://localhost:5173", "https://oss-frontend.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -27,6 +24,7 @@ def root():
         "service_aim_mappings": "/api/service-aim-mappings",
         "relations": "/api/relations",
         "attribute_involvement": "/api/attribute-involvement",
+        "attribute_propagation": "/api/attribute-propagation",
         "diagram_layout": "/api/diagram-layout",
     }
 
