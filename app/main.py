@@ -9,7 +9,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://oss-frontend.onrender.com",
+        "https://oss-frontend-brep.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
