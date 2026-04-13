@@ -2,14 +2,15 @@ from uuid import UUID
 from pydantic import BaseModel, Field
 from app.schemas.common import ORMBase
 
-class OrderSubAimItem(BaseModel):
+class OrderSubAimItem(ORMBase):
+    id: UUID
     code: str = Field(min_length=1, max_length=100)
     name: str = Field(min_length=1, max_length=255)
 
 class OrderAimCreate(BaseModel):
     code: str = Field(min_length=1, max_length=100)
     name: str = Field(min_length=1, max_length=255)
-    sub_aims: list[OrderSubAimItem] = []
+    sub_aims: list = []
 
 class OrderAimRead(ORMBase):
     id: UUID
