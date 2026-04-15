@@ -1,7 +1,7 @@
 from uuid import uuid4
 from sqlalchemy import DateTime, String, func
 from sqlalchemy.dialects.postgresql import UUID
-from app.db.base_class import Base
+from app.db.base import Base
 
 class GatewaySpec(Base):
     __tablename__ = "gateway_specs"
