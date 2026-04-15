@@ -36,3 +36,10 @@ def root():
     }
 
 app.include_router(api_router)
+app.include_router(task_specs_router)
+app.include_router(gateway_specs_router)
+app.include_router(event_specs_router)
+app.include_router(process_specs_router)
+app.include_router(process_elements_router)
+app.include_router(process_flows_router)
+app.include_router(inter_process_dependencies_router)
