@@ -1,7 +1,7 @@
 from uuid import uuid4
 from sqlalchemy import Boolean, DateTime, Integer, JSON, String, Text, func
 from sqlalchemy.dialects.postgresql import UUID
-from app.db.base_class import Base
+from app.db.base import Base
 
 class TaskSpec(Base):
     __tablename__ = "task_specs"
