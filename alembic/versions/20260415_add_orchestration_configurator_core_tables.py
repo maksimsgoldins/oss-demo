@@ -10,7 +10,7 @@ import sqlalchemy as sa
 from sqlalchemy.dialects import postgresql
 
 revision = "20260415_orchestrator_v1"
-down_revision = None
+down_revision = "0001_initial"
 branch_labels = None
 depends_on = None
 
